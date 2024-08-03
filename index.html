@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logos.png" height="35px"/>
+        <span>Skyline</span>
+    </div>
+    <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="nav-list">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#about-us">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="contact-us">
+        <a href="#contact-us">Contact Us</a>
+    </div>
+</header>
+
+    <section class="hero" id="home">
+        <div class="flex-container">
+            <div class="flexbox bold-text">
+                <h1>Color Digitally With Imagination Palette</h1>
+            </div>
+            <div class="flexbox">
+                We are digital magicians, turning ideas into compelling designs, driving change and creating real impact.
+            </div>
+        </div>
+        <div class="flex-container banner">
+            <div class="stats">
+                <div class="data">500 <span class="color">+</span><br>Happy Clients</div>
+                <div class="data">200 <span class="color">+</span><br>Projects Completed</div>
+                <div class="data">12 <span class="color">yr+</span><br>Experience</div>
+            </div>
+            <div class="contact-info">
+                <img src="banner.jpeg" height="100%" width="90%" style="border-radius: 8% 0 0 8%; float: right;" />
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="badges">Our Service</h2>
+            <div class="header_1">
+                <div class="flexbox">
+                    <h1>We Build Best Service Experience</h1>
+                </div>
+                <div class="flexbox">
+                    <p>We believe that creativity, collaboration, and adaptability are the keys to success in this fast-changing digital era.</p>
+                </div>
+            </div>
+            <div class="service-cards">
+                <div class="card">
+                  <div class="icons"><img src="2.jpeg" alt="UI/UX Design Icon" style="border-radius: 22px;" width="35"></div>
+                    <h3>UI/UX Design</h3>
+                    <p>UI/UX in app is key to creating a great user experience. This will increase user loyalty, strengthen brand image, and provide a competitive advantage.</p>
+                </div>
+                <div class="card branding">
+                  <div class="icons"><img src="1.jpeg" alt="UI/UX Design Icon" style="border-radius: 22px;" width="35"></div>
+                    <h3>Branding</h3>
+                    <p>Branding can involve strategies and efforts to build a consistent image, identity, and perception associated with a product, service, or company.</p>
+                </div>
+                <div class="card">
+                  <div class="icons"><img src="3.jpeg" alt="UI/UX Design Icon" style="border-radius: 22px;" width="35"></div>
+                    <h3>Developer</h3>
+                    <p>Developers play an important role in creating technology solutions that make life easier, improve business processes, and drive innovation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+          var navList = document.getElementById('nav-list');
+          navList.classList.toggle('active');
+      });
+  </script>
+</body>
+
+</html>
